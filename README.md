@@ -69,6 +69,7 @@ I also have hands-on coding experience (Flutter, Java/Android, C#), which helps 
 
 | Project | Description | Highlights |
 |---|---|---|
+| [**Bình Minh Lottery System**](https://github.com/Hieutrinh04/BinhMinh-Lottery-System) *(ongoing)* | BA project: prize-ticket lottery system for a distributor network | SRS, Use case, BPMN, state & activity diagrams, 29 UI mockups |
 | **TripFood** | Graduation project | End-to-end product: requirements → design → implementation |
 | **Ryan Voca** | English vocabulary learning website | Personal product, actively developed |
 | **Expense Tracker** | Personal expense tracking app | Built with Flutter |
