@@ -70,9 +70,9 @@ I also have hands-on coding experience (Flutter, Java/Android, C#), which helps 
 | Project | Description | Highlights |
 |---|---|---|
 | [**Bình Minh Lottery System**](https://github.com/Hieutrinh04/BinhMinh-Lottery-System) *(ongoing)* | BA project: prize-ticket lottery system for a distributor network | SRS, Use case, BPMN, state & activity diagrams, 29 UI mockups |
-| **TripFood** | Graduation project | End-to-end product: requirements → design → implementation |
-| **Ryan Voca** | English vocabulary learning website | Personal product, actively developed |
-| **Expense Tracker** | Personal expense tracking app | Built with Flutter |
+| [**FoodTrip**](https://github.com/Hieutrinh04/FoodTrip) | Graduation project: AI food-travel itinerary planner | React, Supabase, Weighted Sum scoring, TSP route optimisation, VNPay/SePay |
+| [**Lexilo (Ryan Voca)**](https://github.com/Hieutrinh04/Ryan4-English) · [Demo](https://lexilo.pages.dev) | English learning website | Leitner spaced repetition, AI feedback, RAG, Chrome extension |
+| [**Fiscal AI Wallet**](https://github.com/Hieutrinh04/Fiscal-AI) | AI-powered personal finance app | Flutter, Supabase, Gemini AI, bank sync via SePay |
 | [**MockProject – Criminal Investigation**](https://github.com/nhomBA/MockProject_062025_NhomBA) | BA mock project (06/2025) | Agile/Scrum + Kanban, 10-member team, BA documentation |
 | [**FinMate**](https://github.com/Lei-TL/fe-finmate) | Personal finance Android app | Java, Room, Retrofit, JWT auth, offline-first sync |
 
