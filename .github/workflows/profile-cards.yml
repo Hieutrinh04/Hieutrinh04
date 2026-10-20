@@ -1,0 +1,108 @@
+name: Generate Profile Cards
+
+# Tạo các thẻ thống kê ngay trong repo, không phụ thuộc vào các server công cộng
+# (github-readme-stats.vercel.app, trophy, activity-graph...) vốn hay bị quá tải.
+on:
+  # Tự động chạy mỗi ngày lúc 01:00 UTC (08:00 giờ Việt Nam)
+  schedule:
+    - cron: "0 1 * * *"
+  # Cho phép chạy thủ công trong tab Actions
+  workflow_dispatch:
+  # Chạy lại khi sửa workflow này
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  stats-cards:
+    name: Stats, languages & pinned repos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&count_private=false
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin card – FoodTrip
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=FoodTrip&theme=tokyonight&hide_border=true
+          path: profile/pin-foodtrip.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin card – Lexilo
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Ryan4-English&theme=tokyonight&hide_border=true
+          path: profile/pin-lexilo.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin card – Fiscal AI
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Fiscal-AI&theme=tokyonight&hide_border=true
+          path: profile/pin-fiscal-ai.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin card – Bình Minh Lottery System
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=BinhMinh-Lottery-System&theme=tokyonight&hide_border=true
+          path: profile/pin-bmls.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh profile stats cards"
+            git pull --rebase origin main
+            git push
+          fi
+
+  summary-cards:
+    name: Profile summary (contribution graph, languages, productive time)
+    needs: stats-cards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 7
+          THEME: tokyonight
+          AUTO_PUSH: true
