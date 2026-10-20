@@ -115,28 +115,18 @@ I also have hands-on coding experience (Flutter, Java/Android, C#), which helps 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img
-    height="165"
-    src="https://github-readme-stats.vercel.app/api?username=Hieutrinh04&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=false"
-    alt="GitHub statistics"
-  />
-
-  <img
-    height="165"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hieutrinh04&layout=compact&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=false"
-    alt="Most used languages"
-  />
+  <img height="165" src="./profile/stats.svg" alt="GitHub statistics" />
+  <img height="165" src="./profile/top-langs.svg" alt="Most used languages" />
 </p>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🏆 GitHub Highlights
 
 <p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=Hieutrinh04&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4"
-    alt="GitHub trophies"
-  />
+  <img height="165" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repos per language" />
+  <img height="165" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most commit language" />
+  <img height="165" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive time" />
 </p>
 
 ---
@@ -144,11 +134,7 @@ I also have hands-on coding experience (Flutter, Java/Android, C#), which helps 
 ## 📈 Contribution Graph
 
 <p align="center">
-  <img
-    width="100%"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Hieutrinh04&theme=tokyo-night&hide_border=true"
-    alt="GitHub contribution graph"
-  />
+  <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution graph" />
 </p>
 
 ---
@@ -164,22 +150,19 @@ I also have hands-on coding experience (Flutter, Java/Android, C#), which helps 
 
 ---
 
-## 🔝 Top Contributed Repositories
+## 🔝 Top Repositories
 
 <p align="center">
-  <img
-    src="https://github-contributor-stats.vercel.app/api?username=Hieutrinh04&limit=5&theme=tokyonight&combine_all_yearly_contributions=true"
-    alt="Top contributed repositories"
-  />
+  <a href="https://github.com/Hieutrinh04/FoodTrip"><img src="./profile/pin-foodtrip.svg" alt="FoodTrip" /></a>
+  <a href="https://github.com/Hieutrinh04/Ryan4-English"><img src="./profile/pin-lexilo.svg" alt="Lexilo" /></a>
+  <a href="https://github.com/Hieutrinh04/Fiscal-AI"><img src="./profile/pin-fiscal-ai.svg" alt="Fiscal AI Wallet" /></a>
+  <a href="https://github.com/Hieutrinh04/BinhMinh-Lottery-System"><img src="./profile/pin-bmls.svg" alt="Bình Minh Lottery System" /></a>
 </p>
 
 ---
 
 <p align="center">
-  <img
-    src="https://visitcount.itsvg.in/api?id=Hieutrinh04&icon=5&color=6"
-    alt="Profile visit count"
-  />
+  <img src="https://komarev.com/ghpvc/?username=Hieutrinh04&label=Profile%20views&color=7aa2f7&style=flat" alt="Profile visit count" />
 </p>
 
 <h3 align="center">
